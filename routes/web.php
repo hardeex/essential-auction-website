@@ -21,5 +21,5 @@ Route::get('/', function () {
 
 # navigate to the index page
 Route::get('/', function(){
-    return view('base');
+    return view('layout.base');
 });

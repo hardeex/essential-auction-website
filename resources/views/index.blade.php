@@ -1,1 +1,4 @@
-<h2>Testing if the page works....</h2>
+<!--- adding the base layout file -->
+@extends('layout.base')
+
+@section('title', 'Home')
