@@ -21,12 +21,19 @@
     
     
 
-    <!--- links to the css and javascripts  -->
+    <!--- start of links to the css files  -->
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/mediaQuerry.css">
+    <!--- end of links to the css files  -->
+
+    <!--- start of links to the javascript files  -->
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--- Link to the main.js internal javascript file-->
     <script src="{{ asset('js/main.js') }}" defer></script>
+    <!--- end of links to the javascript files  -->
 </head>
 
 
@@ -38,11 +45,11 @@
                 <img src="images/logo.png" alt="Essential Nigeria Logo">
             </a>
         
-            <!-- start of the navigatio bar -->
+         <!-- Start of the navigation bar -->
             <nav class="navbar">
                 <a href="#home">Home</a>
                 <div class="dropdown">
-                    <a href="#auction">Auction</a>
+                    <a href="#auction">Auction &#9662;</a> <!-- Add a down arrow &#9662; to indicate sub-menu -->
                     <div class="dropdown-content">
                         <a href="#">Building</a>
                         <a href="#">Clothes</a>
@@ -53,15 +60,26 @@
                 <a href="#about">About Us</a>
                 <a href="#support">Support</a>
                 <a href="#newletter">Newsletter</a>
+                <a href="#newletter">Test if JS Auto-add works</a>
             </nav>
-             <!-- End of the navigatio bar -->
-        
+            <!-- End of the navigation bar -->
+
              <!-- start integrating the search form/icon, cart-btn and the responsive menue -->
-            <div class="icons">
+             <div class="icons">
+                 <!-- Person icon for registration/login -->
+                 <div class="user-dropdown">
+                    <div class="fas fa-user" id="user-btn"></div>
+                    <div class="dropdown-content">
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                    </div>
+                </div>
                 <div class="fas fa-search" id="search-btn"></div>
                 <div class="fas fa-shopping-cart" id="cart-btn"></div>
                 <div class="fas fa-bars" id="menu-btn"></div>
             </div>
+            
+            
           <!--  End of integrating the search form/icon, cart-btn and the responsive menue -->
 
 
@@ -89,23 +107,113 @@
                 <a href="#" class="btn-checkout">checkout now</a>
             </div>
             <!-- End of the cart-item section when clicked --->
+
   </header>
         <!--- The header section ends here... --->
   
+    
 
     <!--- Start of the content or body of the website for each page-->
     <main>
-        @section('body')
-            
-        @endsection
+      <section>
+        <h1 id="body-start">This is body of the page</h1>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus officiis nisi animi
+         corrupti illo sint cum aliquid ullam voluptatem similique, quidem, rerum necessitatibus, 
+         vel nostrum magni facilis iste aliquam deserunt?
+        </p>
+        <form action="" method="post">
+          <input type="email" name="email"><input type="submit" value="Subscribe">
+        </form>
+      </section>
+       
     </main>
     <!--- End of the content or body of the website for each page-->
 
-    <!--- The start of the footer page for each page--->
-    <footer>
+    <!-- ======= Footer ======= -->
+  <footer>
 
-    </footer>
-    <!--- The end of the footer code for each layout -->
+    <!--- start of the newsletter form -->
+    <div class="footer-newsletter">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-6">
+                  <h4>Join Our Newsletter</h4>
+                  <p>Be updated on our exciting products and services</p>
+                  <form action="" method="post" class="newsletter-form">
+                      <input type="email" name="email" placeholder="Enter your email">
+                      <input type="submit" value="Subscribe" id="btn-newsletter-submit">
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--- end of the newsletter form -->
+  
+  <div class="grid-footer-container">
+      <div class="footer-address">
+        <h4>Essential Nigeria</h4>
+        <p>
+          24, Iyana-Street, <br>
+          Alausa, Ikeja, <br>
+          Nigeria. <br><br>
+          <strong>Phone:</strong> +23481 4841  3982<br>
+          <strong>Email:</strong> admin@essential.com<br>
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-services">
+        <h4>Our Services</h4>
+        <ul>         
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Essential Auctions</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Essential Hotels</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Business Directories</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Email Services</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Job Search</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Online Store</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Health</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Student Loans</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-social-links">
+        <h4>Our Social Networks</h4>
+        <p>Be updated on beneficial information...</p>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>          
+      </div>
+      </div>
+  </div>
+
+ 
+    <div class="copyright-container">
+      <hr>
+      <div class="copyright">        
+        &copy; Copyright <strong><span>Essential Nigeria</span></strong>. All Rights Reserved
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+
+ 
+
+
+</body>
     
 </body>
 </html>
