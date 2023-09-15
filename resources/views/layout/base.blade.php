@@ -116,16 +116,9 @@
     <!--- Start of the content or body of the website for each page-->
     <main>
       <section>
-        <h1 id="body-start">This is body of the page</h1>
-       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus officiis nisi animi
-         corrupti illo sint cum aliquid ullam voluptatem similique, quidem, rerum necessitatibus, 
-         vel nostrum magni facilis iste aliquam deserunt?
-        </p>
-        <form action="" method="post">
-          <input type="email" name="email"><input type="submit" value="Subscribe">
-        </form>
+            @yield('content')  
       </section>
-       
+ 
     </main>
     <!--- End of the content or body of the website for each page-->
 

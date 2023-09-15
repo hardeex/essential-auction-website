@@ -23,3 +23,9 @@ Route::get('/', function () {
 Route::get('/', function(){
     return view('index');
 });
+
+
+# navigate to the register page
+Route::get('/register', function(){
+    return view('auth.register');
+});
