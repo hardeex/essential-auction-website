@@ -1,0 +1,8 @@
+.env
+bootstrap/cache/
+storage/
+vendor/
+storage/logs/
+.idea/
+.vscode/
+
