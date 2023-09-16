@@ -36,4 +36,41 @@ window.onscroll = () =>{
     cartItem.classList.remove('active'); // remove the cart item
 }
 
+// make the bid item highlight horizontally scrollable
+$(document).ready(function () {
+    const container = $('.browse-bid-row-container');
+    const bidRow = $('.browse-bid-row');
+    const bidItem = $('.bid-item');
+    const prevArrow = $('.prev-arrow');
+    const nextArrow = $('.next-arrow');
 
+    let currentPosition = 0;
+
+    // Calculate the maximum scroll position based on the number of bid items
+    const maxPosition = (bidItem.length - 1) * bidItem.outerWidth();
+
+    // Function to scroll bid items
+    const scrollBidItems = (direction) => {
+        if (direction === 'next') {
+            currentPosition += bidItem.outerWidth();
+        } else {
+            currentPosition -= bidItem.outerWidth();
+        }
+
+        // Ensure the currentPosition stays within bounds
+        currentPosition = Math.min(Math.max(currentPosition, 0), maxPosition);
+
+        // Update the CSS to scroll the bid items
+        bidRow.css('transform', `translateX(-${currentPosition}px)`);
+    };
+
+    // Scroll to the right when the next arrow is clicked
+    nextArrow.click(() => {
+        scrollBidItems('next');
+    });
+
+    // Scroll to the left when the previous arrow is clicked
+    prevArrow.click(() => {
+        scrollBidItems('prev');
+    });
+});

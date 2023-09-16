@@ -1,0 +1,115 @@
+.highlight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlight-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 3.2rem;
+}
+
+.highlight-arrow {
+    display: flex;
+}
+
+.arrow {
+    margin-right: 10px; 
+}
+
+.arrow:first-child {
+    margin-right: 0; 
+}
+
+.arrow:last-child {
+    margin-left: 30px; 
+}
+
+.arrow img, .item-image img{
+    width: 50px;
+    height: 50px;
+}
+
+/* The brwose bid highlight */
+
+.browse-bid-row-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.browse-bid-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px; /* Add spacing between bid items */
+    transition: transform 0.3s ease;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow-x: hidden; /* Enable horizontal scrolling for text */
+    margin-top: 2.5rem;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Adjust this value to control the scroll speed */
+    }
+}
+
+.bid-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(238, 225, 225, 0.5);
+}
+
+.item-image {
+    display: flex; /* Display images side by side */
+    gap: 20px; /* Add spacing between images */
+}
+
+.item-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bid-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.bid-name h5 {
+    margin: 0;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+button {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

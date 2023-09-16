@@ -3,6 +3,6 @@
 @section('title', 'Home')
 
 @section('content')
-<h1>Register Page</h1>
+<h1>Register</h1>
     
 @endsection

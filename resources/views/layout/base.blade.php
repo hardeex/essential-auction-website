@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/mediaQuerry.css">
+    @yield('link')
     <!--- end of links to the css files  -->
 
     <!--- start of links to the javascript files  -->
@@ -107,11 +108,11 @@
                 <a href="#" class="btn-checkout">checkout now</a>
             </div>
             <!-- End of the cart-item section when clicked --->
-
+           
   </header>
         <!--- The header section ends here... --->
   
-    
+       @yield('hero-content') <!-- adding an hero-image -->
 
     <!--- Start of the content or body of the website for each page-->
     <main>
