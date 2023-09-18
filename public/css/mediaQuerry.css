@@ -95,3 +95,50 @@
         grid-template-columns: 1fr; 
     }
   }
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .bid-grid-container {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+
+    .bid-container {
+        width: 100%; /* Make sure each container takes up the full width */
+    }
+
+    .bid-image img {
+        max-width: 100%; /* Ensure images don't overflow */
+    }
+}
+
+
+/** Upcoming event section */
+@media screen and (max-width: 768px) {
+    .auction-action {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .content {
+        width: 100%;
+    }
+}
+
+/* Adjust styles for responsiveness for the active bid */
+@media screen and (max-width: 768px) {
+    .active-bid {
+        flex-direction: column;
+    }
+
+    .active-bid-data {
+        margin-left: 0;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .close-bids button {
+        margin-top: 1rem; /* Adjust the margin as needed */
+    }
+}
+
+

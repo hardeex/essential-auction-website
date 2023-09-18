@@ -36,7 +36,7 @@ window.onscroll = () =>{
     cartItem.classList.remove('active'); // remove the cart item
 }
 
-// make the bid item highlight horizontally scrollable
+// start of making the bid item highlight horizontally scrollable
 $(document).ready(function () {
     const container = $('.browse-bid-row-container');
     const bidRow = $('.browse-bid-row');
@@ -72,5 +72,23 @@ $(document).ready(function () {
     // Scroll to the left when the previous arrow is clicked
     prevArrow.click(() => {
         scrollBidItems('prev');
+    });
+});
+// end of making the bid item horizontally scrollable 
+
+// ==== Handling the show and hide of some auction contents in the index page-- The upcoming section =======
+$(document).ready(function () {
+    $('.auction-action button').click(function () {
+        var target = $(this).data('target');
+        
+        if (target === 'all-content') {
+            // Show all content sections
+            $('.contents').show();
+        } else {
+            // Hide all content sections
+            $('.contents').hide();
+            // Show the selected content section
+            $('#' + target).show();
+        }
     });
 });
