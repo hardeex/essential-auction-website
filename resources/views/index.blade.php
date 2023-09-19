@@ -52,12 +52,12 @@
          <!--- bid item div -->
          <div class="bid-item">
             <div class="item-image">
-                <img src="/img/arrow.png" alt="">
+                <img src="/img/search.png" alt="real estate icon">
             </div>
         
             <div class="bid-details">
                 <div class="bid-name">
-                    <h5>Houses & Apartments</h5>
+                    <h5>Real Estate</h5>
                 </div>
                 <button type="submit">Show More</button>
             </div>
@@ -66,12 +66,12 @@
         <!--- bid item div -->
         <div class="bid-item">
             <div class="item-image">
-                <img src="/img/arrow.png" alt="">
+                <img src="/img/car.png" alt="car icon">
             </div>
         
             <div class="bid-details">
                 <div class="bid-name">
-                    <h5>Commercial Properties</h5>
+                    <h5>Vehicles</h5>
                 </div>
                 <button type="submit">Show More</button>
             </div>
@@ -80,7 +80,7 @@
         <!--- bid item div -->
         <div class="bid-item">
             <div class="item-image">
-                <img src="/img/arrow.png" alt="">
+                <img src="/img/factory.png" alt="">
             </div>
         
             <div class="bid-details">
@@ -94,12 +94,12 @@
         <!--- bid item div -->
         <div class="bid-item">
             <div class="item-image">
-                <img src="/img/arrow.png" alt="">
+                <img src="/img/ring.png" alt="">
             </div>
         
             <div class="bid-details">
                 <div class="bid-name">
-                    <h5>Land Plots</h5>
+                    <h5>Jewelry and Watches</h5>
                 </div>
                 <button type="submit">Show More</button>
             </div>
@@ -108,16 +108,99 @@
          <!--- bid item div -->
          <div class="bid-item">
             <div class="item-image">
-                <img src="/img/arrow.png" alt="">
+                <img src="/img/stamp.png" alt="">
             </div>
         
             <div class="bid-details">
                 <div class="bid-name">
-                    <h5>Students Loan </h5>
+                    <h5> Art and Collectibles </h5>
                 </div>
                 <button type="submit">Show More</button>
             </div>
         </div>
+
+<!--- End of the bid item list -->
+
+
+             <!--- bid item div -->
+         <div class="bid-item">
+            <div class="item-image">
+                <img src="/img/house-decoration.png" alt="">
+            </div>
+        
+            <div class="bid-details">
+                <div class="bid-name">
+                    <h5> Furniture and Home Decor </h5>
+                </div>
+                <button type="submit">Show More</button>
+            </div>
+        </div>
+
+<!--- End of the bid item list -->
+
+
+
+             <!--- bid item div -->
+         <div class="bid-item">
+            <div class="item-image">
+                <img src="/img/smartphone.png" alt="">
+            </div>
+        
+            <div class="bid-details">
+                <div class="bid-name">
+                    <h5> Agricultural Equipment </h5>
+                </div>
+                <button type="submit">Show More</button>
+            </div>
+        </div>
+
+<!--- End of the bid item list -->
+
+  <!--- bid item div -->
+  <div class="bid-item">
+    <div class="item-image">
+        <img src="/img/assets.png" alt="">
+    </div>
+
+    <div class="bid-details">
+        <div class="bid-name">
+            <h5> Business Asset </h5>
+        </div>
+        <button type="submit">Show More</button>
+    </div>
+</div>
+
+<!--- End of the bid item list -->
+
+         <!--- bid item div -->
+  <div class="bid-item">
+    <div class="item-image">
+        <img src="/img/auction.png" alt="">
+    </div>
+
+    <div class="bid-details">
+        <div class="bid-name">
+            <h5> Charity Auction </h5>
+        </div>
+        <button type="submit">Show More</button>
+    </div>
+</div>
+
+<!--- End of the bid item list -->
+
+                 <!--- bid item div -->
+  <div class="bid-item">
+    <div class="item-image">
+        <img src="/img/intangible-asset.png" alt="">
+    </div>
+
+    <div class="bid-details">
+        <div class="bid-name">
+            <h5> Intellectual Property </h5>
+        </div>
+        <button type="submit">Show More</button>
+    </div>
+</div>
 
 <!--- End of the bid item list -->
     </div>
@@ -165,7 +248,70 @@
     </div>
 
 
- <!--- start of the browse bid item --->
+    <!--- ===== REGISTER NOW SECTION ===== ---->
+    
+    <div class="register-now">
+        <div>
+             <h2 id="txt-register">REGISTER NOW AND GET 100% BONUS ON YOUR FIRST PURCHASE</h2>
+        </div>
+       
+
+      <div class="divide-register-info">
+
+        <div class="why-register">
+            <h3>Why Register</h3>
+            <ul>
+                <li>Get 100% Bonus towards your first purchase</li>
+                <li>View all bid item details and prices</li>
+                <li>Add items to your watchlist</li>
+                <li>Make bids to win auctions</li>
+                <li>Variety of services for the first-time buyer</li>
+            </ul>
+        </div>
+
+        <div class="register-form-container">
+            <h2>Register</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+
+                <div class="form-group" id="terms-and-condition">
+                    <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+                    <label for="terms_conditions">I have read and fully agree with Essential Auction Terms & Conditions</label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+      </div>
+
+    </div>
+   
+
+
+ <!--- ==== FEATURED BID ====start of the browse bid item --->
 <div class="featured-items">
     <h2>Featured Items</h2>
     <div class="view-more-bids">
@@ -601,5 +747,32 @@
     </div>
     
     
-    
+
+    <!---======== MEMBERSHIP SECTION------ ==== --->
+
+    <div class="membership-section">
+        <div class="text-membership">
+            <h2>Membership Options</h2>
+            <p>
+                As an Essential Auction Member, you'll have access to our vast inventory spanning various types of auctions, 
+                not limited to just cars. Whether you're interested in wholesale, salvage, or used vehicles, as well as a wide 
+                range of other auction items, we've got you covered. To unlock even more features and benefits, consider upgrading 
+                to a Basic or Premier Membership. With these upgraded memberships, you can actively participate in live auctions 
+                across our diverse selection of items, making it easier to secure the products you desire!
+            </p>
+        </div>
+
+        <div class="choose-member-option">
+            <div class="guest-option">
+                <h4>Guest</h4>
+                <h5 class="member-mode">FREE</h5>
+                <p></p>
+            </div>
+
+
+            <div class="basic-option"></div>
+            <div class="premier-option"></div>
+        </div>
+
+    </div>
 @endsection
