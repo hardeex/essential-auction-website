@@ -196,6 +196,7 @@ button:hover {
 
 .form-group input[type="text"],
 .form-group input[type="email"],
+.form-group input[type="password"],
 .form-group input[type="tel"] {
     width: 100%;
     padding: 10px;
@@ -206,10 +207,26 @@ button:hover {
 
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
 .form-group input[type="tel"]:focus {
     outline: none;
     border-color: #007bff;
 }
+
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
 
 .checkbox-label {
     display: inline-block;
@@ -529,14 +546,8 @@ button:hover {
 }
 
 
-
-
-
-
-
-/* Add this CSS to your existing styles */
 .submit-bid-button {
-    margin-top: 1rem; /* Adjust the margin as needed */
+    margin-top: 1rem; 
     background-color: #FF5733;
     color: white;
     padding: 10px 20px;
@@ -550,5 +561,123 @@ button:hover {
 .submit-bid-button:hover {
     background-color: #FF4411;
 }
+
+
+/* ==== MEMBERSHIP OPTIONS STYLE ===== */
+
+.text-membership{
+    text-align: center;
+    margin-top: 5rem;
+    line-height: 2rem;
+}
+
+.text-membership h2{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-membership p{
+    font-size: 1.2rem;
+    text-justify: auto;
+    margin-bottom: 2rem;
+}
+
+
+.membership-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.membership-option {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+     border: 2px solid transparent; /* Initially, set the border to transparent */
+    transition: border-color 0.3s;
+}
+
+.membership-option h4 {
+    font-size: 2.4rem;
+    text-align: left;
+}
+
+.membership-option h5.member-mode {
+    font-size: 2rem;
+    color: #FF5733;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.membership-option p {
+    font-size: 1.3rem;
+    text-align: left;
+    margin-top: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.membership-option ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.membership-option ul li{
+    margin-bottom: 2rem;
+}
+
+/* Center the button horizontally and vertically */
+.membership-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the button is centered on the entire viewport height */
+}
+
+
+.btn-register {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-register:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 767px) {
+    .membership-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .membership-option {
+        width: 100%;
+        max-width: none; 
+        animation: none; 
+        border: 2px solid #FF5733; 
+        border-radius: 5px;
+    }
+}
+
+
 
 

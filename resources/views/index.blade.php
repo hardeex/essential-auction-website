@@ -49,7 +49,22 @@
     </div>
     <div class="browse-bid-row">
         <!-- bid item divs (your items here) -->
+
          <!--- bid item div -->
+         <div class="bid-item">
+            <div class="item-image">
+                <img src="/img/farming.png" alt="car icon">
+            </div>
+        
+            <div class="bid-details">
+                <div class="bid-name">
+                    <h5>Land Plots</h5>
+                </div>
+                <button type="submit">Show More</button>
+            </div>
+        </div>
+        
+        <!--- bid item div -->
          <div class="bid-item">
             <div class="item-image">
                 <img src="/img/search.png" alt="real estate icon">
@@ -57,7 +72,21 @@
         
             <div class="bid-details">
                 <div class="bid-name">
-                    <h5>Real Estate</h5>
+                    <h5>Houses & Apartments</h5>
+                </div>
+                <button type="submit">Show More</button>
+            </div>
+        </div>
+
+         <!--- bid item div -->
+         <div class="bid-item">
+            <div class="item-image">
+                <img src="/img/residential.png" alt="car icon">
+            </div>
+        
+            <div class="bid-details">
+                <div class="bid-name">
+                    <h5>Commercial Properties</h5>
                 </div>
                 <button type="submit">Show More</button>
             </div>
@@ -250,7 +279,7 @@
 
     <!--- ===== REGISTER NOW SECTION ===== ---->
     
-    <div class="register-now">
+    <div class="register-now" id="register-section">
         <div>
              <h2 id="txt-register">REGISTER NOW AND GET 100% BONUS ON YOUR FIRST PURCHASE</h2>
         </div>
@@ -284,6 +313,22 @@
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                <label for="membership-option">Select Membership Option:</label>
+                <select id="membership-option" name="membership-option">
+                    
+                    <option value="guest">Guest</option>
+                    <option value="basic">Basic</option>
+                    <option value="premier">Premier</option>
+                </select>
+                </div>
+
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phone" required>
@@ -754,25 +799,54 @@
         <div class="text-membership">
             <h2>Membership Options</h2>
             <p>
-                As an Essential Auction Member, you'll have access to our vast inventory spanning various types of auctions, 
-                not limited to just cars. Whether you're interested in wholesale, salvage, or used vehicles, as well as a wide 
-                range of other auction items, we've got you covered. To unlock even more features and benefits, consider upgrading 
-                to a Basic or Premier Membership. With these upgraded memberships, you can actively participate in live auctions 
-                across our diverse selection of items, making it easier to secure the products you desire!
+                As an Essential Auction Member, you'll enjoy unrestricted access to our extensive inventory, 
+                featuring diverse auction categories beyond just cars. Whether it's wholesale, salvage, or used 
+                vehicles, or a wide array of other auction items, we've got you covered. Elevate your experience 
+                by upgrading to Basic or Premier Membership, granting you active participation in live auctions 
+                across our vast selection. Simplify securing the products you desire with our upgraded memberships!
             </p>
         </div>
-
-        <div class="choose-member-option">
-            <div class="guest-option">
+    
+        <div class="membership-options">
+            <div class="membership-option">
                 <h4>Guest</h4>
                 <h5 class="member-mode">FREE</h5>
-                <p></p>
+                <p>For those who want to look at auctions, but don't want to bid.</p>
+                <ul>
+                    <li>Pay Annually</li>
+                    <li>View an Auction</li>
+                    <li>Add bid items to your watchlist</li>
+                    <li>Create bids alert</li>
+                </ul>
             </div>
-
-
-            <div class="basic-option"></div>
-            <div class="premier-option"></div>
+        
+            <div class="membership-option" id="basic-option">
+                <h4>Basic</h4>
+                <h5 class="member-mode">NGN 7987</h5>
+                <p>For those who plan to buy only a few bid items per year.</p>
+                <ul>
+                    <li>View multiple online auctions</li>
+                    <li>Bid up to one million without making a deposit</li>
+                    <li>Bid on up to five bid items at a time with a deposit</li>
+                    <li>Save your favorite searches</li>
+                </ul>
+            </div>
+        
+            <div class="membership-option">
+                <h4>Premier</h4>
+                <h5 class="member-mode">NGN 7987</h5>
+                <p>For those who plan to buy multiple bid items on a regular basis.</p>
+                <ul>
+                    <li>Everything included in <strong style="color: #FF5733">Basic</strong></li>
+                    <li>Bid on multiple vehicles at the same time up to three million naira daily</li>
+                    <li>Get priority in-location assistance</li>
+                    <li>Receive priority customer service</li>
+                    <li>Receive phone support</li>
+                </ul>
+            </div>
         </div>
+        <div><button class="btn-register" onclick="scrollToSection('register-section')">Register</button></div>
 
-    </div>
+     
+        
 @endsection

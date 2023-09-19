@@ -92,3 +92,14 @@ $(document).ready(function () {
         }
     });
 });
+
+
+// naivate to the register section at the index page
+function scrollToSection(sectionId) {
+    const targetSection = document.getElementById(sectionId);
+
+    if (targetSection) {
+        // Scroll smoothly to the target section
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
