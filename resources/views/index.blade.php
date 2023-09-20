@@ -355,6 +355,62 @@
     </div>
    
 
+     <!---  ======= WHY CHOOSE US ==== ----->
+         <div class="why-choose-us">
+             <div>
+                 <h2>Why Choose Us</h2>
+                 <h5>Combining the tradition of auction sales with the convenience and reach of our cutting-edge online bidding platform.</h5>
+                 <p>
+                     We are a national leader in delivering unparalleled service that excels in providing
+                     expert guidance, swift execution, and competitive pricing. Our groundbreaking platform
+                     for investment property transactions combines the advantages of conventional auctions and sales,
+                     offering speed, certainty, and profitability. Moreover, we uphold an unwavering commitment to transparency,
+                     eliminating the risk of underhanded tactics such as gazumping, gazundering, or double-selling.
+                 </p>
+             </div>
+             <div class="accordion">
+                 <div class="why-us-point-header"><h4>Transparency</h4></div>
+                 <div class="why-us-point-header-desc">
+                     <p>
+                         The auction room's open competition offers an unparalleled level of transparency in the sales process,
+                         surpassing the discretion of private treaty methods. This ensures that your property finds its rightful owner,
+                         the individual willing to make the highest bid on the day of the auction.
+                     </p>
+                 </div>
+             </div>
+             <div class="accordion">
+                 <div class="why-us-point-header"><h4>Certainty</h4></div>
+                 <div class="why-us-point-header-desc">
+                     <p>
+                         An auction contract is absolute and unambiguous. The moment the auctioneer's hammer signals the winning bid,
+                         the buyer promptly commits by placing a 10% non-refundable deposit, and the exchange of contracts takes place
+                         without delay.
+                     </p>
+                 </div>
+             </div>
+             <div class="accordion">
+                 <div class="why-us-point-header"><h4>Competition</h4></div>
+                 <div class="why-us-point-header-desc">
+                     <p>
+                         When multiple bidders vie for your property, the competitive atmosphere possesses the potential to
+                         significantly elevate the final sale price, maximizing the return on your investment.
+                     </p>
+                 </div>
+             </div>
+             <div class="accordion">
+                 <div class="why-us-point-header"><h4>Time</h4></div>
+                 <div class="why-us-point-header-desc">
+                     <p>
+                         Auction contracts adhere to precise timelines, setting a fixed completion date that ensures
+                         you receive the full sale amount promptly. This distinct feature sets it apart from traditional sales,
+                         providing you with a clear and predictable transaction timeline.
+                     </p>
+                 </div>
+             </div>
+         </div>
+     
+     <!---  ======= End of WHY CHOOSE US ==== ----->
+
 
  <!--- ==== FEATURED BID ====start of the browse bid item --->
 <div class="featured-items">
@@ -846,6 +902,9 @@
             </div>
         </div>
         <div><button class="btn-register" onclick="scrollToSection('register-section')">Register</button></div>
+
+
+       
 
      
         

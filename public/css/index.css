@@ -680,4 +680,80 @@ button:hover {
 
 
 
+/*---  ======= WHY CHOOSE US STYLING==== -- */
 
+.why-choose-us {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 5rem;
+}
+
+.why-choose-us h2{
+    font-size: 5rem;
+}
+
+.why-choose-us h5{
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    text-transform: none;
+}
+
+.why-choose-us p{
+    text-transform: none;
+    margin-bottom: 1.3rem;
+    font-size: 1.4rem;
+    line-height: 20px;
+    justify-content: left;
+}
+
+.why-choose-us h2, h4, h5 {
+    text-align: center;
+}
+
+.accordion {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.why-us-point-header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+}
+
+.why-us-point-header h4 {
+    margin: 0;
+}
+
+.why-us-point-header::before {
+    content: "\25B6"; /*  add a Right arrow before the user click the header */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.why-us-point-header.active::before {
+    content: "\25BC"; /* check the arrow to a Down arrow after the hidden content is visible */
+}
+
+.why-us-point-header-desc.active {
+    display: block;
+}
+
+.why-us-point-header-desc {
+    display: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    line-height: 20px;
+}
+
+p {
+    margin: 0;
+}

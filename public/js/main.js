@@ -76,6 +76,24 @@ $(document).ready(function () {
 });
 // end of making the bid item horizontally scrollable 
 
+//  ======= WHY CHOOSE US STYLING==== JS CODE
+
+document.addEventListener("DOMContentLoaded", function () {
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach((accordion) => {
+        const header = accordion.querySelector(".why-us-point-header");
+        const content = accordion.querySelector(".why-us-point-header-desc");
+
+        header.addEventListener("click", () => {
+            content.classList.toggle("active");
+            header.classList.toggle("active");
+        });
+    });
+});
+
+//  ======= End of WHY CHOOSE US STYLING==== JS CODE
+
 // ==== Handling the show and hide of some auction contents in the index page-- The upcoming section =======
 $(document).ready(function () {
     $('.auction-action button').click(function () {

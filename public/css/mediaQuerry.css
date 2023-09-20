@@ -158,7 +158,15 @@
 }
 
 
-/* === MEMEBERSHIP ==== */
-/* Media Query for smaller screens (phones) */
+
+
+
+/* why choose us media querry */
+@media (max-width: 767px) {
+    .why-choose-us {
+    max-width: 800px;
+    text-align: center;
+}
+}
 
 
