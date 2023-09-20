@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +27,15 @@ Route::get('/', function(){
 });
 
 
-# navigate to the register page
+Route::get('/login', function(){
+    return view('auth.login');
+});
+
 Route::get('/register', function(){
     return view('auth.register');
 });
+
+
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

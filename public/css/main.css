@@ -8,6 +8,8 @@
     --border:.1rem solid rgba(255,255,255,.3);
     --body:rgb(248, 243, 243);
     --text-color:#050505;
+    --btn-color: #FF5733;
+    --btn-color-hover: #0056b3;
 }
 
 /* Properties to be obtained by each page*/

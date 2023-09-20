@@ -7,12 +7,8 @@
 
 <!---- link to the index.css  file -->
 @section('link')
-        <link rel="stylesheet" href="/css/index.css">
-        <link rel="stylesheet" href="/css/mediaQuerry.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="{{ asset('js/main.js') }}" defer></script>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/mediaQuerry.css">
 @endsection
 
 
@@ -277,82 +273,47 @@
     </div>
 
 
-    <!--- ===== REGISTER NOW SECTION ===== ---->
+    <!--- ===== REGISTER NOW SECTION-- INDEX PAGE ===== ---->
     
     <div class="register-now" id="register-section">
         <div>
-             <h2 id="txt-register">REGISTER NOW AND GET 100% BONUS ON YOUR FIRST PURCHASE</h2>
-        </div>
-       
-
-      <div class="divide-register-info">
-
-        <div class="why-register">
-            <h3>Why Register</h3>
-            <ul>
-                <li>Get 100% Bonus towards your first purchase</li>
-                <li>View all bid item details and prices</li>
-                <li>Add items to your watchlist</li>
-                <li>Make bids to win auctions</li>
-                <li>Variety of services for the first-time buyer</li>
-            </ul>
+            <h2 id="txt-register">REGISTER NOW AND GET 100% BONUS ON YOUR FIRST PURCHASE</h2>
         </div>
 
-        <div class="register-form-container">
-            <h2>Register</h2>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="first_name">First Name</label>
-                    <input type="text" id="first_name" name="first_name" required>
-                </div>
-                <div class="form-group">
-                    <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+        <div class="divide-register-info">
 
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
+            <div class="why-register">
+                <h3>Why Register</h3>
+                <ul>
+                    <li>Get 100% Bonus towards your first purchase</li>
+                    <li>View all bid item details and prices</li>
+                    <li>Add items to your watchlist</li>
+                    <li>Make bids to win auctions</li>
+                    <li>Variety of services for the first-time buyer</li>
+                </ul>
+                <a href="{{ url('register') }}" class="btn-primary">Click here to Register</a>
+            </div>
 
-                <div class="form-group">
-                <label for="membership-option">Select Membership Option:</label>
-                <select id="membership-option" name="membership-option">
-                    
-                    <option value="guest">Guest</option>
-                    <option value="basic">Basic</option>
-                    <option value="premier">Premier</option>
-                </select>
+            <div class="why-sell">
+                <h2>Why Sell?</h2>
+                <div>
+                    <p>
+                        Are you contemplating the sale of your property or land through auction in Nigeria? You're certainly not alone;
+                        each year, approximately 18,000-20,000 homes change hands via auction (and that's just for residential properties).
+                        <br>
+                        Opting for an auction sale is often the optimal path to achieve a swift transaction and secure the best possible
+                        price on auction day. However, if you're new to the world of auctions, the prospect may initially appear somewhat intimidating.
+                        At Essential Nigeria, we are committed to demystifying the auction selling process, enabling you to confidently assess whether
+                        it aligns with your goals. In this comprehensive guide, we address common queries that prospective sellers often have,
+                        providing you with all the essential information you need when considering the auction as your selling method.
+                    </p>
                 </div>
+            </div>
 
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="location">Location</label>
-                    <input type="text" id="location" name="location" required>
-                </div>
-
-                <div class="form-group" id="terms-and-condition">
-                    <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
-                    <label for="terms_conditions">I have read and fully agree with Essential Auction Terms & Conditions</label>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn-primary">Submit</button>
-                </div>
-            </form>
         </div>
-
-
-      </div>
 
     </div>
+    <!--- ===== END OF REGISTER NOW SECTION-- INDEX PAGE ===== ---->
    
 
      <!---  ======= WHY CHOOSE US ==== ----->

@@ -162,137 +162,65 @@ button:hover {
 
 
 /* ====== REGISTER NOW SECTION STYLING ====== */
-.register-form-container {
-    max-width: 500px;
-    margin: 0 auto;
-    margin-top: 3rem;
-    padding: 20px;
+.register-now {
+    text-align: center;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#txt-register {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007BFF;
 }
 
 .divide-register-info {
     display: flex;
     justify-content: space-between;
-    gap: 10rem;
+    flex-wrap: wrap;
 }
 
-.register-form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-    text-decoration: underline;
+.why-register, .why-sell {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.form-group {
-    margin-bottom: 15px;
+.why-register h3, .why-sell h2 {
+    font-size: 1.5rem;
+    color: #007BFF;
 }
 
-.form-group label {
-    display: block;
-    font-weight: bold;
+.why-register ul {
+    padding: 0;
+    list-style-type: none;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="password"],
-.form-group input[type="tel"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-}
-
-.form-group input[type="text"]:focus,
-.form-group input[type="email"]:focus,
-.form-group input[type="password"]:focus,
-.form-group input[type="tel"]:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-
-.form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-}
-
-.form-group select:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-
-.checkbox-label {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-    font-size: 16px;
+.why-register ul li {
+    margin-bottom: 10px;
 }
 
 .btn-primary {
-    background-color: #FF5733;
+    background-color: #007BFF;
     color: #fff;
+    padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    font-size: 18px;
-    padding: 10px 20px;
-    cursor: pointer;
-    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
     background-color: #0056b3;
 }
-
-.register-now {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5rem auto 3rem;
-    max-width: 800px;
-    padding: 0 20px;
-}
-
-#txt-register {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-}
-
-.why-register {
-    max-width: 100%;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.why-register h3 {
-    text-align: center;
-    font-size: 2.5rem;
-    text-decoration: underline;
-}
-
-.why-register ul {
-    list-style-type: circle;
-    padding-top: 2rem;
-    padding-left: 20px;
-    font-size: 2rem;
-}
-
-.why-register ul li {
-    margin-bottom: 40px;
-    list-style-type: disc;
-}
-
 
 /* The style for the featured items section */
 

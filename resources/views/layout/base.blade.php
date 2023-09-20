@@ -26,6 +26,13 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/mediaQuerry.css">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ asset('js/main.js') }}" defer></script>
     @yield('link')
     <!--- end of links to the css files  -->
 
@@ -48,7 +55,7 @@
         
          <!-- Start of the navigation bar -->
             <nav class="navbar">
-                <a href="#home">Home</a>
+                <a href="{{ url('/') }}">Home</a>
                 <div class="dropdown">
                     <a href="#auction">Auction &#9662;</a> <!-- Add a down arrow &#9662; to indicate sub-menu -->
                     <div class="dropdown-content">
@@ -71,8 +78,8 @@
                  <div class="user-dropdown">
                     <div class="fas fa-user" id="user-btn"></div>
                     <div class="dropdown-content">
-                        <a href="#">Login</a>
-                        <a href="#">Register</a>
+                        <a href="{{ url('login') }}">Login</a>
+                        <a href="{{ url('register') }}">Register</a>
                     </div>
                 </div>
                 <div class="fas fa-search" id="search-btn"></div>

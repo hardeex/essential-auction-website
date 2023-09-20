@@ -158,9 +158,6 @@
 }
 
 
-
-
-
 /* why choose us media querry */
 @media (max-width: 767px) {
     .why-choose-us {
@@ -168,5 +165,20 @@
     text-align: center;
 }
 }
+
+
+/* ==== LOGIN MEDIA QUERRY ==== */
+@media (max-width: 768px) {
+    .login-form-container {
+        width: 80%;
+    }
+}
+
+/* ==== REGISTER === */
+@media (max-width: 768px) {
+    .register-form-container {
+      max-width: 100%;
+    }
+  }
 
 
