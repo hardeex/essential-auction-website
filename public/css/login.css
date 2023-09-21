@@ -59,3 +59,7 @@ input[type="submit"]:hover {
     background-color: var(--btn-color-hover);
 }
 
+.sign-up{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}

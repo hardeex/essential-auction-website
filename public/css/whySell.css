@@ -1,0 +1,64 @@
+section{
+    margin-top: 5rem;
+    
+}
+
+a{
+    color: var(--btn-color);
+    text-transform: none;
+}
+
+a:hover{
+    color: var(--btn-color-hover);
+}
+
+h4{
+    font-size: 1.8rem;
+    margin-top: 1.6rem;
+}
+
+h5{
+    font-size: 1.8rem;
+    text-transform: none;
+}
+.why-sell-container h1{
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.why-sell-container h2{
+    margin-top: 1.7rem;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.why-sell-container ul li{
+    font-size: 2rem;
+    margin-top: 1.2rem;
+}
+
+ p{
+    text-transform: none;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.point-raised{
+    padding-left: 2rem;
+}
+
+.point-raised ol li{
+    font-size: 2rem;
+    margin-top: 1.3rem;
+}
+
+.point-raised ul li {
+    text-transform: none;
+}
+
+.sub-point-raised{
+    padding-left: 4rem;
+}

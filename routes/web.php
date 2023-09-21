@@ -26,6 +26,13 @@ Route::get('/', function(){
     return view('index');
 });
 
+Route::get('/why-sell', function(){
+    return view('why-sell');
+});
+
+Route::get('/sale-form', function(){
+    return view('sale-form');
+});
 
 Route::get('/login', function(){
     return view('auth.login');

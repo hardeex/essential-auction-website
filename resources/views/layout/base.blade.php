@@ -68,7 +68,14 @@
                 <a href="#about">About Us</a>
                 <a href="#support">Support</a>
                 <a href="#newletter">Newsletter</a>
-                <a href="#newletter">Test if JS Auto-add works</a>
+                <div class="dropdown">
+                <a href="{{ url('why-sell') }}"> Why Sell At Auction? &#9662;</a> <!-- Add a down arrow &#9662; to indicate sub-menu -->
+                  <div class="dropdown-content">
+                      <a href="{{ url('sale-form') }}">Make a Sell at Auction</a>
+                      <a href="{{ url('unsales-property') }}">If Auction fail?</a>
+                  </div>
+              </div>
+    
             </nav>
             <!-- End of the navigation bar -->
 

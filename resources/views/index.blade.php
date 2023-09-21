@@ -17,7 +17,7 @@
  <section class="home" id="home">
     <div class="content">
         <p>Find Next Generation</p>
-        <h3>A Better Way To Buy Propery</h3>
+        <h3>A Better Way To Buy Property</h3>
         <p>Bid in private, from the comfort of your home.</p>
         <a href="#" class="btn">Browse Property</a>
     </div>      
@@ -283,7 +283,7 @@
         <div class="divide-register-info">
 
             <div class="why-register">
-                <h3>Why Register</h3>
+                <h3>Why Register?</h3>
                 <ul>
                     <li>Get 100% Bonus towards your first purchase</li>
                     <li>View all bid item details and prices</li>
@@ -291,9 +291,11 @@
                     <li>Make bids to win auctions</li>
                     <li>Variety of services for the first-time buyer</li>
                 </ul>
-                <a href="{{ url('register') }}" class="btn-primary">Click here to Register</a>
+                <div style="margin-top: 8rem;">
+                    <a href="{{ url('register') }}" class="btn-register">Click here to Register</a>
+                </div>
             </div>
-
+     
             <div class="why-sell">
                 <h2>Why Sell?</h2>
                 <div>
@@ -305,7 +307,8 @@
                         price on auction day. However, if you're new to the world of auctions, the prospect may initially appear somewhat intimidating.
                         At Essential Nigeria, we are committed to demystifying the auction selling process, enabling you to confidently assess whether
                         it aligns with your goals. In this comprehensive guide, we address common queries that prospective sellers often have,
-                        providing you with all the essential information you need when considering the auction as your selling method.
+                        providing you with all the essential information you need when considering the 
+                        auction as your selling method..... <a href="{{ url('why-sell') }}">Read More...</a>
                     </p>
                 </div>
             </div>
@@ -600,7 +603,7 @@
                 <div class="non-bid-price">
                     <p>Last Bid</p>
                     <h6 class="buy-bid-item">18 min ago</h6>
-                    <div class="bid-inquiry"><button>Send Bid Inquiry</button></div>
+                    <div class="bid-inquiry"><button href="{{ url('sale-form') }}" >Send Bid Inquiry</button></div>
                 </div>
                
             </div>

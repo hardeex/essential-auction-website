@@ -1,0 +1,69 @@
+.sales-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 10rem;
+}
+
+.sales-form-container p{
+    font-size: 1.3rem;
+    text-transform: none;
+    line-height: 20px;
+}
+
+.sales-form {
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3.6rem;
+}
+
+.sales-form-container .sales-form form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+label, input, select {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+select {
+    height: 40px;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.half-width {
+    width: calc(50% - 10px);
+}
+
+#btn-property {
+    background-color: var(--btn-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#btn-property:hover{
+    background-color: var(--btn-color-hover);
+}
