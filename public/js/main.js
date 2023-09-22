@@ -121,3 +121,26 @@ function scrollToSection(sectionId) {
         targetSection.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+
+// automated scroll up====
+// Select the button element
+const scrollToTopButton = document.getElementById('scroll-to-top');
+
+// Add a scroll event listener
+window.addEventListener('scroll', () => {
+  // If the user has scrolled down 300 pixels, show the button; otherwise, hide it
+  if (window.scrollY >= 300) {
+    scrollToTopButton.style.display = 'block';
+  } else {
+    scrollToTopButton.style.display = 'none';
+  }
+});
+
+// Scroll to the top when the button is clicked
+scrollToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', // Add smooth scrolling behavior
+  });
+});

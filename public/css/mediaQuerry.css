@@ -182,4 +182,17 @@
   }
 
 
+   /* ==== SUPPORT PAGE==== Media query for smaller screens */
+   @media screen and (max-width: 768px) {
+    .support-container {
+      flex-direction: column;
+    }
+  
+    .support-form,
+    .map {
+      flex: none; /* Remove the flex property */
+      width: 100%; /* Make them full width */
+      margin: 0; /* Remove margins for full width */
+    }
+  }
 

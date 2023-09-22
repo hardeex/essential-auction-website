@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\AuctionPages;
+use App\Http\Controllers\Authentication;
+
 
 
 /*
@@ -21,28 +24,25 @@ Route::get('/', function () {
 });
 */
 
-# navigate to the index page
-Route::get('/', function(){
-    return view('index');
-});
+# -- AuctionPages Controller
+Route::get('/', [AuctionPages::class, 'index']);
+Route::get('/support', [AuctionPages::class, 'support']);
+Route::get('/why-sell', [AuctionPages::class, 'whySell']);
+Route::get('/sale-form', [AuctionPages::class, 'sellForm']);
 
-Route::get('/why-sell', function(){
-    return view('why-sell');
-});
 
-Route::get('/sale-form', function(){
-    return view('sale-form');
-});
-
-Route::get('/login', function(){
-    return view('auth.login');
-});
-
-Route::get('/register', function(){
-    return view('auth.register');
-});
+# Authentication Controller
+Route::get('/login', [Authentication::class, 'login']);
+Route::get('/register', [Authentication::class, 'register']);
 
 
 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+
+
+
+
+

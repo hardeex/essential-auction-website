@@ -30,6 +30,8 @@
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-rHK8Yvo0Hq21bHk1hiOPpGWT1H8wvcPb11TPFqEadFk5BdCiA/pz5wr5bx6F7bMd" crossorigin="anonymous">
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{{ asset('js/main.js') }}" defer></script>
@@ -66,7 +68,7 @@
                     </div>
                 </div>
                 <a href="#about">About Us</a>
-                <a href="#support">Support</a>
+                <a href="{{ url('support') }}">Support</a>
                 <a href="#newletter">Newsletter</a>
                 <div class="dropdown">
                 <a href="{{ url('why-sell') }}"> Why Sell At Auction? &#9662;</a> <!-- Add a down arrow &#9662; to indicate sub-menu -->
@@ -219,9 +221,10 @@
 
 
  
-
-
-</body>
-    
+  <!--- implementing automated scroll up--->
+  <div id="scroll-to-top">
+    <a href="#" title="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  
 </body>
 </html>
