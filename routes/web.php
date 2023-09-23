@@ -4,8 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AuctionPages;
 use App\Http\Controllers\Authentication;
-
-
+use App\Http\Controllers\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +33,11 @@ Route::get('/sale-form', [AuctionPages::class, 'sellForm']);
 # Authentication Controller
 Route::get('/login', [Authentication::class, 'login']);
 Route::get('/register', [Authentication::class, 'register']);
+
+
+# DASHBOARD ROUTE
+Route::get('/user-dashboard', [Dashboard::class, 'userDashboard']);
+Route::get('/admin-dashboard', [Dashboard::class, 'adminDashboard']);
 
 
 

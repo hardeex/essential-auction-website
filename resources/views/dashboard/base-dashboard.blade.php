@@ -22,6 +22,7 @@
     
 
     <!--- start of links to the css files  -->
+    <link rel="stylesheet" href="/css/dasboard/base-dashboard.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
@@ -55,43 +56,16 @@
                 <img src="/img/essential.jpg" alt="Essential Nigeria Logo">
             </a>
         
+               
+             
          <!-- Start of the navigation bar -->
-            <nav class="navbar">
-                <a href="{{ url('/') }}">Home</a>
-                <div class="dropdown">
-                    <a href="#auction">Auction &#9662;</a> <!-- Add a down arrow &#9662; to indicate sub-menu -->
-                    <div class="dropdown-content">
-                        <a href="#">Building</a>
-                        <a href="#">Clothes</a>
-                        <a href="#">Cars</a>
-                        <a href="#">Computer Gadgets</a>
-                    </div>
-                </div>
-                <a href="#about">About Us</a>
-                <a href="{{ url('support') }}">Support</a>
-                <a href="#newletter">Newsletter</a>
-                <div class="dropdown">
-                <a href="{{ url('why-sell') }}"> Why Sell At Auction? &#9662;</a> <!-- Add a down arrow &#9662; to indicate sub-menu -->
-                  <div class="dropdown-content">
-                      <a href="{{ url('sale-form') }}">Make a Sell at Auction</a>
-                      <a href="{{ url('unsales-property') }}">If Auction fail?</a>
-                  </div>
-              </div>
-    
-            </nav>
-            <!-- End of the navigation bar -->
+        
+      
+        <!-- End of the navigation bar -->
 
              <!-- start integrating the search form/icon, cart-btn and the responsive menue -->
              <div class="icons">
                  <!-- Person icon for registration/login -->
-                 <div class="user-dropdown">
-                    <div class="fas fa-user" id="user-btn"></div>
-                    <div class="dropdown-content">
-                        <a href="{{ url('admin-dashboard') }}">Admin</a>
-                        <a href="{{ url('login') }}">Login</a>
-                        <a href="{{ url('register') }}">Register</a>
-                    </div>
-                </div>
                 <div class="fas fa-search" id="search-btn"></div>
                 <div class="fas fa-shopping-cart" id="cart-btn"></div>
                 <div class="fas fa-bars" id="menu-btn"></div>
@@ -125,7 +99,7 @@
                 <a href="#" class="btn-checkout">checkout now</a>
             </div>
             <!-- End of the cart-item section when clicked --->
-           
+
   </header>
         <!--- The header section ends here... --->
   

@@ -1,0 +1,45 @@
+
+
+  /* Define styles for the container and the two columns */
+  .dashboard-container {
+    display: flex;
+    vertical-align: middle;
+    border-bottom: 4px solid var(--btn-color-hover);
+}
+
+.dashboard-container a{
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    font-size: 2.4rem;
+}
+
+.dashboard-header p{
+    font-size: 2rem;
+}
+
+.left-content {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #f2f2f2;
+    max-width: 20rem;
+}
+
+.left-content img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.dashboard-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-aside {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+

@@ -62,7 +62,7 @@ section{
 }
 
 
-
+/* integrating automated scrool-up */
 #scroll-to-top {
     position: fixed;
     bottom: 20px;
@@ -88,4 +88,6 @@ section{
   #scroll-to-top a:hover {
     background-color: var(--btn-color-hover);
   }
+  
+
   
